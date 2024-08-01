@@ -48,7 +48,7 @@ Our initial tuning phase was marked by challenges with excessively overfitting m
 
 These models seemed to hit a ceiling of around 35% accuracy despite incorporating multiple 2D convolutional layers, max-pooling layers, a dropout layer to help prevent overfitting, a flattening layer to take the multidimensional outputs from previous layers, and a fully connected (dense) output layer with softmax.
 
-We decided to look at which classes were causing the most problems. Below are pictures of those with the highest error rates. 
+We decided to look at which classes were causing the most problems. Below are pictures of those with the lowest and highest error rates. 
 
 ![Highest error rates](images/initiallowerrorclasses.png)
 ![Lowest error rates](images/initialhigherrorclasses.png)
