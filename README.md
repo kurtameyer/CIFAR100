@@ -19,7 +19,7 @@ Structure: The dataset is split into 50,000 training and 10,000 test images. Thu
 
 Below is a sampling of images from the dataset:
 
-![Sample images from the CIFAR-100 dataset] (/images/cifarsample.jpg)
+![Sample images from the CIFAR-100 dataset] (/images/cifarsample.png)
 
 ## Problem Set Up
 
