@@ -87,11 +87,14 @@ After trial and error, to gain further intuition, I added code to our notebook t
 
 Doing this allowed me to increase our original model's performance from 57% to 64%. I also tried it on one of the simpler models I had built on my own, and it increased its accuracy from 50% to 57% (with inferior loss values, though). 
 
-![Simple Model Architecture](images/simplemodelarchitecture.png)
-
 ![School Model Performance After Improvements](images/best2.png)
 
+I also tried it on one of the simpler models I had built on my own, and it increased its accuracy from 50% to 57% (with inferior loss values, though). 
+
+![Simple Model Architecture](images/simplemodelarchitecture.png)
+
 ![Simple Model Performance After Improvements](images/best1.png)
+
 
 Looking at error rates by image class was instructive. While the otter fine label was still problematic, error rates for seals, for example, were significantly improved. Moreover, error rates for the most difficult coarse labels significantly declined. 
 
