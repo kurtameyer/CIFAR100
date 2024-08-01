@@ -57,7 +57,7 @@ During the intermediate phase of our model tuning we began experimenting with im
 
 We also tried stacking three convolutional layers together at the beginning of the model. While this method improved performance compared to the initial phase, it did not yield results to justify the additional time and computational expense. 
 
-![Intermediate performance](images/intermediateperformance.jpg)
+![Intermediate performance](images/intermediateperformance.png)
 
 ## Fine Tuning 1
 
