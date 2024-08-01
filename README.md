@@ -19,7 +19,7 @@ Structure: The dataset is split into 50,000 training and 10,000 test images. Thu
 
 Below is a sampling of images from the dataset:
 
-![Sample images from the CIFAR-100 dataset] (images/cifarsample.jpg)
+![Sample images from the CIFAR-100 dataset] (/images/cifarsample.jpg)
 
 ## Problem Set Up
 
@@ -31,7 +31,7 @@ ResNet models utilize the concept of residual blocks, which allow the neural net
 
 I ran ResNet50 in Colab using both an L4 and an A100 GPU, taking 4 and 2 hours, respectively. Below are the accuracy and loss metrics. Based on preset callbacks, the learning rate was reduced once. 
 
-![ResNet50 Performance] (images/resnetaccuracy.png)
+![ResNet50 Performance] (/images/resnetaccuracy.png)
 
 ## Workflows Developed in School
 
@@ -42,20 +42,20 @@ In school, we noticed that keeping track of model performance was difficult. So,
 
 Our initial tuning phase was marked by challenges with excessively overfitting models, which had simple architecture and efficient run times. Our goal in this initial phase was to become acquainted with using the Keras sequential layers to architect our models and all the parameters we could leverage for model tuning. Here is an example of one of our initial model's architectures:
 
-![One of our first models] (images/initialtuning.jpg)
+![One of our first models] (/images/initialtuning.jpg)
 
 These models seemed to hit a ceiling of around 35% accuracy despite incorporating multiple 2D convolutional layers, max-pooling layers, a dropout layer to help prevent overfitting, a flattening layer to take the multidimensional outputs from previous layers, and a fully connected (dense) output layer with softmax.
 
 We decided to look at which classes were causing the most problems. Below are pictures of those with the highest error rates. 
 
-![Highest error rates] (images/initiallowerrorclasses.jpg)
-![Lowest error rates] (images/initialhigherrorclasses.jpg)
+![Highest error rates] (/images/initiallowerrorclasses.jpg)
+![Lowest error rates] (/images/initialhigherrorclasses.jpg)
 
 During the intermediate phase of our model tuning we began experimenting with image augmentation, adding additional layers, and manipulating the number of filters with each layer. Utilizing image augmentation eliminated and dropout layers at the end of the architecture solved overfitting. 
 
 We also tried stacking three convolutional layers together at the beginning of the model. While this method improved performance compared to the initial phase, it did not yield results to justify the additional time and computational expense. 
 
-![Intermediate performance] (images/intermediateperformance.jpg)
+![Intermediate performance] (/images/intermediateperformance.jpg)
 
 ## Fine Tuning 1
 
@@ -69,13 +69,13 @@ For our final model tuning phase, we wanted to see if it could improve accuracy 
 
 This strategy ultimately led to a model giving us an accuracy of 57%, the highest validation accuracy we had seen in our tuning process.
 
-![Architecture of model from school] (images/schoolmodelarchitecture.png)
+![Architecture of model from school] (/images/schoolmodelarchitecture.png)
 
-![Final model from school] (images/finalschoolmodel.jpg)
+![Final model from school] (/images/finalschoolmodel.jpg)
 
-![School Model Fine Label Performance] images(/schoolfine.png)
+![School Model Fine Label Performance] (/images(/schoolfine.png)
 
-![School Model Course Label Performance] (images/schoolcoarse.png)
+![School Model Course Label Performance] (/images/schoolcoarse.png)
 
 ## Fine Tuning 2
 
@@ -85,17 +85,17 @@ After trial and error, to gain further intuition, I added code to our notebook t
 
 Doing this allowed me to increase our original model's performance from 57% to 64%. I also tried it on one of the simpler models I had built on my own, and it increased its accuracy from 50% to 57% (with inferior loss values, though). 
 
-![Simple Model Architecture] (images/simplemodelarchitecture.jpg)
+![Simple Model Architecture] (/images/simplemodelarchitecture.jpg)
 
-![School Model Performance After Improvements] (images/best2.jpg)
+![School Model Performance After Improvements] (/images/best2.jpg)
 
-![Simple Model Performance After Improvements] (images/best1.jpg)
+![Simple Model Performance After Improvements] (/images/best1.jpg)
 
 Looking at error rates by image class was instructive. While the otter fine label was still problematic, error rates for seals, for example, were significantly improved. Moreover, error rates for the most difficult coarse labels significantly declined. 
 
-![School Model Fine Label Performance] (images/improvedfine.png)
+![School Model Fine Label Performance] (/images/improvedfine.png)
 
-![School Model Course Label Performance] (images/improvedcoarse.png)
+![School Model Course Label Performance] (/images/improvedcoarse.png)
 
 Key Lessons
 
