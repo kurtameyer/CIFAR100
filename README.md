@@ -73,7 +73,7 @@ This strategy ultimately led to a model giving us an accuracy of 57%, the highes
 
 ![Architecture of model from school](images/schoolmodelarchitecture.png)
 
-![Final model from school](images/finalschoolmodel.jpg)
+![Final model from school](images/finalschoolmodel.png)
 
 ![School Model Fine Label Performance](images/schoolfine.png)
 
