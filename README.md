@@ -50,8 +50,8 @@ These models seemed to hit a ceiling of around 35% accuracy despite incorporatin
 
 We decided to look at which classes were causing the most problems. Below are pictures of those with the highest error rates. 
 
-![Highest error rates](images/initiallowerrorclasses.jpg)
-![Lowest error rates](images/initialhigherrorclasses.jpg)
+![Highest error rates](images/initiallowerrorclasses.png)
+![Lowest error rates](images/initialhigherrorclasses.png)
 
 During the intermediate phase of our model tuning we began experimenting with image augmentation, adding additional layers, and manipulating the number of filters with each layer. Utilizing image augmentation eliminated and dropout layers at the end of the architecture solved overfitting. 
 
@@ -75,7 +75,7 @@ This strategy ultimately led to a model giving us an accuracy of 57%, the highes
 
 ![Final model from school](images/finalschoolmodel.jpg)
 
-![School Model Fine Label Performance](images(/schoolfine.png)
+![School Model Fine Label Performance](images/schoolfine.png)
 
 ![School Model Course Label Performance](images/schoolcoarse.png)
 
@@ -87,11 +87,11 @@ After trial and error, to gain further intuition, I added code to our notebook t
 
 Doing this allowed me to increase our original model's performance from 57% to 64%. I also tried it on one of the simpler models I had built on my own, and it increased its accuracy from 50% to 57% (with inferior loss values, though). 
 
-![Simple Model Architecture](images/simplemodelarchitecture.jpg)
+![Simple Model Architecture](images/simplemodelarchitecture.png)
 
-![School Model Performance After Improvements](images/best2.jpg)
+![School Model Performance After Improvements](images/best2.png)
 
-![Simple Model Performance After Improvements](images/best1.jpg)
+![Simple Model Performance After Improvements](images/best1.png)
 
 Looking at error rates by image class was instructive. While the otter fine label was still problematic, error rates for seals, for example, were significantly improved. Moreover, error rates for the most difficult coarse labels significantly declined. 
 
